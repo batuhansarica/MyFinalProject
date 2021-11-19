@@ -5,6 +5,8 @@ namespace Core.Utilities.Interceptors
 {
     public abstract class MethodInterception : MethodInterceptionBaseAttribute
     {
+        //İnvocation: business taki methodlarımızı temsil eder
+        //OnBefore,OnAfer vb. methodlar interceptors'ımızın methodun basinda,sonunda vb. durumlarda calismasini sagladigimiz methodlar,ValidationAspect class'ında methodlara gorev tanımlamalarını yapıyoruz
         protected virtual void OnBefore(IInvocation invocation) { }
         protected virtual void OnAfter(IInvocation invocation) { }
         protected virtual void OnException(IInvocation invocation, System.Exception e) { }

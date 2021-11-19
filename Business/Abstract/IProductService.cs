@@ -16,5 +16,6 @@ namespace Business.Abstract
         IDataResult<Product> GetById(int productId);
        //void oldugu icin idataresult yapmadık (void fonksiyon oldugu icin)
         IResult Add(Product product);
+        IResult Update(Product product);
     }
 }
